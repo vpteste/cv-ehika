@@ -332,7 +332,7 @@ export default function App() {
     { href: '#skills', label: 'Compétences' },
     { href: '#tools', label: 'Outils' },
     { href: '#experience', label: 'Expérience' },
-    { href: '#projects', label: 'Réalisations' },
+    { href: '#projects', label: 'COMPETENCES' },
     { href: '#contact', label: 'Contact' },
   ];
 
@@ -400,7 +400,7 @@ export default function App() {
               </div>
               <div className="mt-8 flex items-center justify-center gap-4">
                   <a href="#projects" onClick={handleSmoothScroll} className="w-full sm:w-auto inline-block bg-sky-500 text-white font-bold py-3 px-8 rounded-full hover:bg-sky-600 transition-all transform hover:scale-105">
-                      Voir mes réalisations
+                      MES COMPETENCES
                   </a>
               </div>
           </div>
@@ -458,7 +458,7 @@ export default function App() {
         </Section>
 
         {/* Projects Section */}
-        <Section title="Mes Réalisations" id="projects">
+        <Section title="MES COMPETENCES" id="projects">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {projects.map((project, index) => (
               <ProjectCard key={project.title} {...project} index={index} />
